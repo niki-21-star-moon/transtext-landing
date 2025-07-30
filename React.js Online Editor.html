@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://nextleap.app/online-compiler/reactjs-programming/oebpjw6oy -->
+<html lang="en" style="font-size:17px"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0; overflow-anchor: none;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; min-height: 100%; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #ddd;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ1 .cm-iso {unicode-bidi: isolate;}
+.ͼ1 .cm-announced {position: fixed; top: -10000px;}
+@media print {.ͼ1 .cm-announced {display: none;}}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0; z-index: 300;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace {background-image: radial-gradient(circle at 50% 55%, #aaa 20%, transparent 5%); background-position: center;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-diagnostic {padding: 3px 6px 3px 8px; margin-left: -1px; display: block; white-space: pre-wrap;}
+.ͼ1 .cm-diagnostic-error {border-left: 5px solid #d11;}
+.ͼ1 .cm-diagnostic-warning {border-left: 5px solid orange;}
+.ͼ1 .cm-diagnostic-info {border-left: 5px solid #999;}
+.ͼ1 .cm-diagnostic-hint {border-left: 5px solid #66d;}
+.ͼ1 .cm-diagnosticAction {font: inherit; border: none; padding: 2px 4px; background-color: #444; color: white; border-radius: 3px; margin-left: 8px; cursor: pointer;}
+.ͼ1 .cm-diagnosticSource {font-size: 70%; opacity: 0.7;}
+.ͼ1 .cm-lintRange {background-position: left bottom; background-repeat: repeat-x; padding-bottom: 0.7px;}
+.ͼ1 .cm-lintRange-error {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22%23d11%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-warning {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22orange%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-info {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22%23999%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-hint {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="3">%3Cpath%20d%3D%22m0%202.5%20l2%20-1.5%20l1%200%20l2%201.5%20l1%200%22%20stroke%3D%22%2366d%22%20fill%3D%22none%22%20stroke-width%3D%22.7%22%2F%3E</svg>');}
+.ͼ1 .cm-lintRange-active {background-color: #ffdd9980;}
+.ͼ1 .cm-tooltip-lint {padding: 0; margin: 0;}
+.ͼ1 .cm-lintPoint:after {content: ""; position: absolute; bottom: 0; left: -2px; border-left: 3px solid transparent; border-right: 3px solid transparent; border-bottom: 4px solid #d11;}
+.ͼ1 .cm-lintPoint {position: relative;}
+.ͼ1 .cm-lintPoint-warning:after {border-bottom-color: orange;}
+.ͼ1 .cm-lintPoint-info:after {border-bottom-color: #999;}
+.ͼ1 .cm-lintPoint-hint:after {border-bottom-color: #66d;}
+.ͼ1 .cm-panel.cm-panel-lint ul [aria-selected] u {text-decoration: underline;}
+.ͼ1 .cm-panel.cm-panel-lint ul [aria-selected] {background-color: #ddd;}
+.ͼ1 .cm-panel.cm-panel-lint ul:focus [aria-selected] {background: #bdf; background-color: Highlight; color: white; color: HighlightText;}
+.ͼ1 .cm-panel.cm-panel-lint ul u {text-decoration: none;}
+.ͼ1 .cm-panel.cm-panel-lint ul {max-height: 100px; overflow-y: auto; padding: 0; margin: 0;}
+.ͼ1 .cm-panel.cm-panel-lint [name=close] {position: absolute; top: 0; right: 2px; background: inherit; border: none; font: inherit; padding: 0; margin: 0;}
+.ͼ1 .cm-panel.cm-panel-lint {position: relative;}
+.ͼ1 .cm-indentation-widget {display: inline-block;}
+.ͼ1 .cm-indentation-guide {position: relative; height: 100%; display: inline-block;}
+.ͼ1 .cm-indentation-guide:after {position: absolute; content: ''; right: calc(2ch - 4px); height: 100%; border-left: 1px solid var(--indentation-guider-color, rgba(193, 199, 249, 0.4));}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li, .ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > completion-section {display: list-item; border-bottom: 1px solid silver; padding-left: 0.5em; opacity: 0.7;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; height: 100%; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ2 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #777;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ3 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #444;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box; white-space: pre-line;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6; box-sizing: content-box;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 500; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-foldPlaceholder {background-color: #eee; border: 1px solid #ddd; color: #888; border-radius: .2em; margin: 0 1px; padding: 0 1px; cursor: pointer;}
+.ͼ1 .cm-foldGutter span {padding: 0 1px; cursor: pointer;}
+.ͼ6 {color: #569cd6;}
+.ͼ7 {color: #c586c0;}
+.ͼ8 {color: #9cdcfe;}
+.ͼ9 {font-weight: bold; color: #9cdcfe;}
+.ͼa {color: #4ec9b0;}
+.ͼb {color: #569cd6;}
+.ͼc {color: #d4d4d4;}
+.ͼd {color: #b5cea8;}
+.ͼe {color: #569cd6;}
+.ͼf {color: #d16969;}
+.ͼg {color: #ce9178;}
+.ͼh {color: #569cd6;}
+.ͼi {color: #808080;}
+.ͼj {color: #da70d6;}
+.ͼk {color: #ffd700;}
+.ͼl {font-weight: bold;}
+.ͼm {font-style: italic;}
+.ͼn {text-decoration: line-through;}
+.ͼo {color: #6a9955;}
+.ͼp {color: #6a9955; text-decoration: underline;}
+.ͼq {color: #ff0000;}
+.ͼ5 .cm-gutters {background-color: #1e1e1e; color: #838383; border: unset;}
+.ͼ5 {height: var(--code-editor-height, var(--viewport-height, 100vh)); min-height: var(--code-editor-height, var(--viewport-height, 100vh)); max-width: var(--viewport-width, 100vw); background-color: #1e1e1e; color: #9cdcfe;}
+.ͼ5.cm-editor .cm-scroller {font-family: "Lexend Deca", "Droid Sans Mono", "monospace", monospace; font-weight: normal; font-size: 17px; line-height: 160%; scrollbar-width: none;}
+.ͼ5 .cm-scroller::-webkit-scrollbar {display: none;}
+.ͼ5.cm-editor.cm-focused {outline: none;}
+.ͼ5 .cm-lineNumbers {min-width: 32px;}
+.ͼ5 .cm-foldGutter {min-width: 16px;}
+.ͼ5 .cm-tooltip.cm-tooltip-autocomplete {background: #252526; color: #D4D4D4; min-width: 400px; max-width: min(800px, 95vw); border-radius: 4px;}
+.ͼ5 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: "Lexend Deca", "Droid Sans Mono", "monospace", monospace; font-weight: normal; font-size: 17px; line-height: 160%; background: #252526; color: #D4D4D4; border-radius: 4px; max-height: 17em;}
+.ͼ5 .cm-tooltip.cm-tooltip-autocomplete > ul > li {padding-top: 4px; padding-bottom: 4px;}
+.ͼ5 .cm-tooltip-autocomplete ul li[aria-selected] {background: #03395E; color: #ffffff;}
+.ͼ5 .cm-completionIcon-function:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-method-0987.svg');}
+.ͼ5 .cm-completionIcon-method:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-method-0987.svg');}
+.ͼ5 .cm-completionIcon-class:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-class-0987.svg');}
+.ͼ5 .cm-completionIcon-interface:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-interface-0987.svg');}
+.ͼ5 .cm-completionIcon-variable:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-variable-0987.svg');}
+.ͼ5 .cm-completionIcon-constant:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-constant-0987.svg');}
+.ͼ5 .cm-completionIcon-type:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-type-0987.svg');}
+.ͼ5 .cm-completionIcon-enum:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-enum-0987.svg');}
+.ͼ5 .cm-completionIcon-property:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-field-0987.svg');}
+.ͼ5 .cm-completionIcon-keyword:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-keyword-0987.svg');}
+.ͼ5 .cm-completionIcon-namespace:after {content: url('https://assets.nextleap.app/images/nl-code-editor-ac-namespace-0987.svg');}
+.ͼ5 .cm-content {caret-color: #c6c6c6;}
+.ͼ5 .cm-cursor, .ͼ5 .cm-dropCursor {border-left-color: #c6c6c6;}
+.ͼ5 .cm-activeLine {background-color: #ffffff0f;}
+.ͼ5 .cm-activeLineGutter {color: #fff; background-color: #ffffff0f;}
+.ͼ5.cm-focused .cm-selectionBackground, .ͼ5 .cm-line::selection, .ͼ5 .cm-selectionLayer .cm-selectionBackground, .ͼ5 .cm-content ::selection {background: #6199ff2f !important;}
+.ͼ5 .cm-selectionMatch {background-color: #72a1ff59;}
+.ͼ4 .cm-line ::selection, .ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+.ͼ4 .cm-content :focus::selection, .ͼ4 .cm-content :focus ::selection {background-color: Highlight !important;}
+.ͼ4 .cm-content :focus {caret-color: initial !important;}
+.ͼ4 .cm-content {caret-color: transparent !important;}
+</style><link rel="preconnect" href="https://assets.nextleap.app/"><link rel="dns-prefetch" href="https://assets.nextleap.app/"><link rel="dns-prefetch" href="https://nextleap.app/"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link rel="icon" type="image/png" href="https://assets.nextleap.app/images/favicon.ico" sizes="32x32"><meta name="apple-mobile-web-app-title" content="NextLeap - Learning is now social, hands-on and continuous.">
+                <meta name="og_title" property="og:title" content="NextLeap - Learning is now social, hands-on and continuous.">
+                <title>React.js Online Editor</title>
+                <meta name="description" content="React.js Online Editor">
+                <meta property="og:description" content="NextLeap is an invite-only learning network for emerging talent in tech. Learn from a supportive community of experts, mentors and peers to accelerate your career growth.">
+                <meta name="og_image" property="og:image" content="https://assets.nextleap.app/images/home_meta_58b74779-17b8-4df4-a152-43225df71581.png">
+                <meta name="og_url" property="og:url" content="https://nextleap.app/online-compiler/reactjs-programming/oebpjw6oy">
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:site" content="@yourNextLeap">
+                <meta name="twitter:title" content="NextLeap - Learning is now social, hands-on and continuous.">
+                <meta name="twitter:description" content="NextLeap is an invite-only learning network for emerging talent in tech. Learn from a supportive community of experts, mentors and peers to accelerate your career growth.">
+                <meta name="twitter:image" content="https://assets.nextleap.app/images/home_meta_58b74779-17b8-4df4-a152-43225df71581.png"> 
+                
+                <meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1"><meta name="theme-color" content="#000000"><meta name="og_type" property="og:type" content="website"><meta name="og_site_name" property="og:site_name" content="NextLeap.app"><meta name="Keywords" content="NextLeap - Learning is now social, hands-on and continuous."><link rel="manifest" href="https://nextleap.app/manifest.json"><style nonce="">.login-drop-down{position:relative}.desktop-header-middle-container{background-color:initial}:root{--page-left-padding:24px;--page-right-padding:24px}@media (min-width:1280px){:root{--page-left-padding:calc(50vw - 600px);--page-right-padding:calc(50vw - 600px)}.padding-right-64-left-64{padding-right:calc(50vw - 600px)}.padding-right-64-left-64{padding-left:calc(50vw - 600px)}}:root{--hero-image-width:460px;--hero-image-height:584px}:root{--rc-drag-handle-size:12px;--rc-drag-handle-mobile-size:24px;--rc-drag-handle-bg-colour:#0003;--rc-drag-bar-size:6px;--rc-border-color:#ffffffb3;--rc-focus-color:#08f}:root{--rt-color-white:#fff;--rt-color-dark:#222;--rt-color-success:#8dc572;--rt-color-error:#be6464;--rt-color-warning:#f0ad4e;--rt-color-info:#337ab7;--rt-opacity:0.9}:root{--react-pdf-annotation-layer:1;--annotation-unfocused-field-background:url('data:image/svg+xml;charset=utf-8,<svg width="1" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0,54,255,.13)"/></svg>');--input-focus-border-color:Highlight;--input-focus-outline:1px solid Canvas;--input-unfocused-border-color:#0000;--input-disabled-border-color:#0000;--input-hover-border-color:#000}@media (forced-colors:active){:root{--input-focus-border-color:CanvasText;--input-unfocused-border-color:ActiveText;--input-disabled-border-color:GrayText;--input-hover-border-color:Highlight}}:root{--gif-chooser-width:338px}:root{--width:460px}@media (min-width:0px) and (max-width:768px){:root{--hero-image-width:254px;--hero-image-height:322px}:root{--width:100%}}body{font-family:Lexend Exa,Lexend Deca,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}body{counter-reset:katexEqnNo mmlEqnNo}::-webkit-scrollbar{display:none}:root{--react-pdf-annotation-layer:1;--annotation-unfocused-field-background:url('data:image/svg+xml;charset=utf-8,<svg width="1" height="1" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" style="fill:rgba(0,54,255,.13)"/></svg>');--input-focus-border-color:Highlight;--input-focus-outline:1px solid Canvas;--input-unfocused-border-color:#0000;--input-disabled-border-color:#0000;--input-hover-border-color:#000;--link-outline:none}@media screen and (forced-colors:active){:root{--input-focus-border-color:CanvasText;--input-unfocused-border-color:ActiveText;--input-disabled-border-color:GrayText;--input-hover-border-color:Highlight;--link-outline:1.5px solid LinkText}}</style><script async="" src="./React.js Online Editor_files/clarity.js.download"></script><script async="" src="./React.js Online Editor_files/a5iof4qhhp"></script><script src="https://bat.bing.com/bat.js" async=""></script><script async="" src="./React.js Online Editor_files/gtm.js.download"></script><script async="" src="./React.js Online Editor_files/a5iof4qhhp"></script><script src="https://bat.bing.com/bat.js" async=""></script><script src="./React.js Online Editor_files/1191883555172251" async=""></script><script async="" src="./React.js Online Editor_files/fbevents.js.download"></script><script async="" src="./React.js Online Editor_files/insight.old.min.js.download"></script><script type="text/javascript" async="" src="./React.js Online Editor_files/insight.min.js.download" nonce=""></script><script type="text/javascript" async="" src="./React.js Online Editor_files/js" nonce=""></script><script async="" src="./React.js Online Editor_files/gtm.js.download"></script><script nonce="" type="application/ld+json">{"name":"NextLeap | Accelerate Your Career","description":"NextLeap’s highly rated Fellowships help you to break into roles in product management, UX design and software engineering in top technology companies.","@type":"WebSite","url":"https://nextleap.app","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://assets.nextleap.app/images/logo-white-3366eff62fee.svg"}},"sameAs":["https://twitter.com/yournextleap","https://www.linkedin.com/company/your-nextleap/","https://www.youtube.com/c/NextLeap","https://www.youtube.com/@nextleapcoding","https://www.instagram.com/yournextleap/"],"headline":"Land jobs in top product companies","@context":"https://schema.org"}</script><style nonce="">@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeaiLdA5E64BdCIg.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeaiPdA5E64BdCIg.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeai3dA5E64Bc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeaiLdA5E64BdCIg.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeaiPdA5E64BdCIg.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeai3dA5E64Bc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeaiLdA5E64BdCIg.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeaiPdA5E64BdCIg.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Lexend Exa';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/lexendexa/v24/UMBXrPdOoHOnxExyjdBeai3dA5E64Bc.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style><style nonce="">@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qoJy_YZ2ONtuQ.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qpJy_YZ2ONtuQ.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qnJy_YZ2ON.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qoJy_YZ2ONtuQ.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qpJy_YZ2ONtuQ.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qnJy_YZ2ON.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qoJy_YZ2ONtuQ.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qpJy_YZ2ONtuQ.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Lexend Deca';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/lexenddeca/v17/K2F1fZFYk-dHSE0UPPuwQ5qnJy_YZ2ON.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}</style><style nonce="">body{margin:0;font-family:"Lexend Exa","Lexend Deca",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;max-width:100%;max-height:100%;overflow-x:hidden;overflow-y:scroll;overscroll-behavior-y:none;overscroll-behavior-x:auto}code{font-family:source-code-pro,Menlo,Monaco,Consolas,"Courier New",monospace}.nl-dark-noise::after{position:absolute;content:"";background:url(https://assets.nextleap.app/images/dark_noise_9e6c9b9c-15bb-4f9c-967d-f52f7b1c3525.png);animation:grain 10s steps(6) infinite}.grecaptcha-badge{visibility:hidden!important}*{box-sizing:border-box;-webkit-box-sizing:border-box;-msbox-sizing:border-box}.d-none{display:none!important}.padding-right-64-left-64{padding-left:64px;padding-right:64px}.shell-header-padding-no-gutter{padding-left:64px;padding-right:64px}@media (min-width:0px) and (max-width:768px){.padding-right-64-left-64{padding-left:24px;padding-right:24px}.shell-header-padding-no-gutter{padding-left:24px;padding-right:24px}}@media (min-width:1280px){.padding-right-64-left-64{padding-left:calc((100vw - 1200px)/ 2);padding-right:calc((100vw - 1200px)/ 2)}}.shell-header-container{background:#000;color:#fff}.shell-header-image-icon{src:url("https://assets.nextleap.app/images/logo-white-3366eff62fee.svg");-webkit-filter:invert(100);filter:invert(100)}.shell-header-container{width:100%;height:100px;position:-webkit-sticky;position:sticky;top:0;z-index:1015;display:flex;max-width:100%;align-items:center}.shell-header-image-container{width:120px;height:32px;z-index:10}.shell-header-image-icon{overflow:hidden;width:120px;height:32px}.desktop-shell-header-container-right{display:flex;width:100%}.desktop-header-middle-container{display:flex;flex-direction:row;justify-content:center;align-items:center;background-color:transparent;width:100%;height:100%}.desktop-shell-drop-down{height:100px;display:flex;flex-direction:column;justify-content:center;margin-left:25px;padding-right:25px}.desktop-shell-header-text{font-family:"Lexend Deca";font-style:normal;font-weight:500;font-size:15px;line-height:134%;letter-spacing:.25px;text-decoration:none;color:inherit;width:fit-content;display:flex;flex-direction:row;justify-content:center;align-items:center}.desktop-shell-header-text::after{margin-left:8px;display:inline-block;margin-left:8px;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}.desktop-shell-header-text-no-dropdown::after{display:none}@media (max-width:1024px){.desktop-shell-header-container-right{display:none}}@media (min-width:0px) and (max-width:768px){.shell-header-container{height:76px;padding-top:26px;padding-bottom:26px}}.shell-bar1,.shell-bar2,.shell-bar3{background-color:#000}.shell-hamburger{background-image:url("https://assets.nextleap.app/images/star-white-9d4aaf636700.svg")}.shell-hamburger{display:none;width:48px;height:48px;position:absolute;right:64px;top:32px;padding:12px 16px}@media (max-width:1024px){.shell-hamburger{display:block}}@media (min-width:0px) and (max-width:768px){.shell-hamburger{right:24px;top:14px}}.shell-bar1,.shell-bar2,.shell-bar3{width:16px;height:2px;margin:4px 0;transition:.4s}.change .shell-bar1{-webkit-transform:rotate(-45deg) translate(-6px,6px);transform:rotate(-45deg) translate(-6px,6px)}.change .shell-bar2{opacity:0}.change .shell-bar3{-webkit-transform:rotate(45deg) translate(-2px,-3px);transform:rotate(45deg) translate(-2px,-3px)}.shell-page-container{background-color:#000}.shell-page-container{height:calc(100vh - 100px)}@media (max-width:1024px){.shell-page-container{height:calc(100vh - 76px)}}@media (max-width:767.98px){.shell-page-container{height:calc(100vh - 76px)}}.page-shell-footer-container{background-color:var(--footer-bg-color,#141414);color:var(--footer-text-color,#fff);width:100%}.shell-footer-logo{-webkit-filter:invert(var(--footer-logo-invert,100));filter:invert(var(--footer-logo-invert, 100))}.second-shell-footer-section{display:flex;flex-direction:row;width:100%;padding-top:48px;padding-bottom:85px;flex-wrap:wrap}.shell-footer-section-outer-container{flex-wrap:wrap;justify-content:flex-start;display:flex;flex:1;column-gap:36px}.shell-footer-section-outer-container-margin{margin-top:64px}.shell-footer-logo{width:120px;height:32px}.shell-footer-section-inner-container{flex:1}.shell-footer-section-inner-container-courses{flex:1}.shell-footer-main-heading{margin-bottom:16px;width:fit-content;font-family:"Lexend Deca";font-style:normal;font-weight:500;font-size:15px;line-height:160%;letter-spacing:.25px}.shell-footer-sub-heading-container{display:flex;flex-direction:column;flex-wrap:wrap;row-gap:16px}.shell-dynamic-footer-sub-heading-container{display:flex;flex-direction:row;flex-wrap:wrap;row-gap:8px;column-gap:8px}.shell-footer-sub-heading{color:inherit;opacity:.6;width:fit-content;cursor:pointer;text-decoration:none;font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:15px;line-height:160%;letter-spacing:.25px}.shell-footer-sub-heading:hover{text-decoration:underline;color:inherit}.shell-footer-copyright{font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:13px;line-height:150%;color:inherit;opacity:.6}.shell-footer-company-desc{font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:13px;line-height:150%;color:inherit;opacity:.6}.anchor{color:inherit;text-decoration:none}.shell-footer-social-logo-main{height:14px;width:14px;margin-right:10px;padding-top:3px;filter:invert(calc(100 - var(--footer-logo-invert, 100)));-webkit-filter:invert(calc(100 - var(--footer-logo-invert,100)))}.shell-footer-logo-container{display:flex;flex-direction:row;justify-content:flex-start;padding-top:56px;padding-bottom:56px}.shell-second-footer-section{display:flex;flex-direction:row;width:100%;padding-top:48px;padding-bottom:85px;flex-wrap:wrap}.shell-page-footer-html-outer-container{padding-top:80px;--text-color:"white";--border-color:#e5e5e5;--page-primary-color:var(--footer-bg-color, #141414)}.shell-page-footer-html-container-card{position:relative;background-color:#ffffff0d;padding-top:48px;padding-left:40px;padding-right:40px;padding-bottom:48px;border-radius:8px;width:100%}.shell-page-footer-html-container-truncate-text{display:-webkit-box;-webkit-line-clamp:10;line-clamp:10;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;white-space:normal}.shell-page-footer-html-container-truncate-text-read-more{display:flex;justify-content:flex-end}.shell-page-footer-html-container-card-mask{display:flex;padding-bottom:12px;align-items:flex-end;justify-content:center;height:65%;width:100%;position:absolute;bottom:0;left:0;z-index:1;background:linear-gradient(0deg,var(--page-primary-color) 0,rgba(0,0,0,0) 100%);cursor:pointer}.shell-page-footer-html-container-card-read-more{font-family:Lexend Deca;font-style:normal;font-weight:500;font-size:17px;line-height:118%;letter-spacing:.5px;cursor:pointer;color:#fff}.shell-page-footer-html-container>blockquote{background:var(--tertiary-background-color);border-left:4px solid var(--primary-text-color);margin:0;padding:1em 16px}.shell-page-footer-html-container>blockquote p{display:inline}.shell-page-footer-html-container a{color:var(--shell-page-footer-html-a-tag-color)}.shell-page-footer-html-container li{margin-bottom:12px;font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:17px;line-height:160%;letter-spacing:.25px}.shell-page-footer-html-container p{font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:17px;line-height:160%;letter-spacing:.25px}.shell-page-footer-html-container h1{font-family:"Lexend Exa";font-style:normal;font-weight:400;font-size:42px;line-height:114%;letter-spacing:-3.35px;margin:0;font-feature-settings:"'liga' off"}.shell-page-footer-html-container h2{font-family:"Lexend Exa";font-style:normal;font-weight:400;font-size:35px;line-height:120%;letter-spacing:-2.8px;font-feature-settings:"'liga' off"}.shell-page-footer-html-container h3{font-family:"Lexend Exa";font-style:normal;font-weight:400;font-size:30px;line-height:125%;letter-spacing:-2.5px;font-feature-settings:"'liga' off"}.shell-page-footer-html-container h4{font-family:"Lexend Exa";font-style:normal;font-weight:400;font-size:22px;line-height:128%;letter-spacing:-2.25px;font-feature-settings:"'liga' off"}.shell-page-footer-html-container h5{font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:19px;line-height:145%;letter-spacing:.15px}.shell-page-footer-html-container h6{font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:19px;line-height:145%;letter-spacing:.15px}.shell-page-footer-html-container pre{white-space:pre-wrap;background-color:#f4f4f4!important;padding:12px 24px;border-radius:8px;color:#3f5c90;font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:17px;line-height:160%;letter-spacing:.25px}.shell-page-footer-html-container code{font-family:"Lexend Deca";color:#3f5c90;background-color:#f4f4f4;padding:2px 4px;border-radius:3px}.shell-page-footer-html-container img{max-width:100%;object-fit:contain}.code-block{white-space:pre-wrap;background-color:#f4f4f4!important;border:1px solid var(--border-color,#e5e5e5)!important;padding:12px 24px}.shell-page-footer-html-container .code-block code{background-color:unset;padding:unset;border-radius:unset;white-space:pre-wrap}.shell-page-footer-html-container table{border-spacing:0px;border-collapse:collapse;border:1px solid var(--border-color);border-radius:8px;border-collapse:collapse}.shell-page-footer-html-container thead{background-color:#fafafa;box-shadow:inset 0 -1px 0 var(--border-color,#e5e5e5)}.shell-page-footer-html-container th{border-right:1px solid var(--border-color,#e5e5e5);padding:16px;text-align:left;vertical-align:top;font-family:"Lexend Deca";font-style:normal;font-weight:500;font-size:13px;line-height:150%;opacity:.75;color:#212121;white-space:pre-wrap;border-bottom:none;text-align:left;width:1%}.shell-page-footer-html-container th:last-child{border-right:initial}.shell-page-footer-html-container tr{border-bottom:1px solid var(--border-color,#e5e5e5)}.shell-page-footer-html-container td{border-right:1px solid var(--border-color,#e5e5e5);color:var(--text-color,rgba(18,18,18));opacity:.75;padding:16px;white-space:pre-wrap;text-align:left;border-top:none;font-family:"Lexend Deca";font-style:normal;font-weight:400;font-size:17px;line-height:160%;letter-spacing:.25px;cursor:initial}.shell-page-footer-html-container td:last-child{border-right:initial}@media (min-width:0px) and (max-width:768px){.shell-footer-section-outer-container{column-gap:0;row-gap:32px}.shell-footer-section-outer-container-margin{margin-top:32px}.shell-footer-logo-container{padding-top:32px;padding-bottom:32px}.shell-footer-section-inner-container{margin-left:0;padding-left:0;min-width:50%}.shell-footer-section-inner-container-courses{min-width:100%}.shell-footer-logo{width:90px;height:24px}.second-shell-footer-section{padding-top:32px;padding-bottom:24px}.shell-footer-sub-heading-container{row-gap:20px}.shell-second-footer-section{padding-top:32px;padding-bottom:24px}.shell-page-footer-html-container>a{font-size:17px;line-height:25px}.shell-page-footer-html-container li{margin-bottom:8px}.shell-page-footer-html-container h1{font-size:31px;line-height:110%}.shell-page-footer-html-container h2{font-size:27px;line-height:114%}.shell-page-footer-html-container h3{font-size:24px;line-height:118%;letter-spacing:-2px}.shell-page-footer-html-container h4{letter-spacing:-2px}.shell-page-footer-html-container h5{letter-spacing:unset}.shell-page-footer-html-container h6{letter-spacing:unset}.shell-page-footer-html-container-card{padding-top:24px;padding-left:24px;padding-right:24px;padding-bottom:24px}}</style><script nonce="" defer="defer" src="./React.js Online Editor_files/main.91b74ae6.js.download"></script><link href="./React.js Online Editor_files/main.d3f01a41.css" rel="preload" as="style"><script nonce="">var link = document.createElement('link');link.rel = 'preload';link.as = 'style'; link.href = 'https://assets.nextleap.app/static/css/main.d3f01a41.css';link.onload = function() {this.onload=null;this.rel='stylesheet';};document.head.appendChild(link);</script><link rel="stylesheet" as="style" href="./React.js Online Editor_files/main.d3f01a41.css"><noscript><link href="https://assets.nextleap.app/static/css/main.d3f01a41.css" rel="preload" as="style"/><script nonce="33a5ccaa5f2ac7127b96544068acff47">var link = document.createElement('link');link.rel = 'preload';link.as = 'style'; link.href = 'https://assets.nextleap.app/static/css/main.d3f01a41.css';link.onload = function() {this.onload=null;this.rel='stylesheet';};document.head.appendChild(link);</script><noscript><link href="https://assets.nextleap.app/static/css/main.d3f01a41.css" rel="stylesheet"></noscript><style type="text/css">.rtf{box-sizing:border-box;margin:25px;position:fixed;white-space:nowrap;z-index:9998;padding-left:0;list-style:none}.rtf.open .rtf--mb>*{transform-origin:center center;transform:rotate(315deg);transition:transform .2s ease-in-out}.rtf.open .rtf--mb>ul{list-style:none;margin:0;padding:0}.rtf.open .rtf--ab__c:hover>span,.rtf.open .rtf--ab__c>span.always-show{transition:opacity .2s ease-in-out;opacity:.9}.rtf.open .rtf--ab__c:first-child{transform:translateY(-60px) scale(1);transition-delay:.03s}.rtf.open .rtf--ab__c:first-child.top{transform:translateY(60px) scale(1)}.rtf.open .rtf--ab__c:nth-child(2){transform:translateY(-120px) scale(1);transition-delay:.09s}.rtf.open .rtf--ab__c:nth-child(2).top{transform:translateY(120px) scale(1)}.rtf.open .rtf--ab__c:nth-child(3){transform:translateY(-180px) scale(1);transition-delay:.12s}.rtf.open .rtf--ab__c:nth-child(3).top{transform:translateY(180px) scale(1)}.rtf.open .rtf--ab__c:nth-child(4){transform:translateY(-240px) scale(1);transition-delay:.15s}.rtf.open .rtf--ab__c:nth-child(4).top{transform:translateY(240px) scale(1)}.rtf.open .rtf--ab__c:nth-child(5){transform:translateY(-300px) scale(1);transition-delay:.18s}.rtf.open .rtf--ab__c:nth-child(5).top{transform:translateY(300px) scale(1)}.rtf.open .rtf--ab__c:nth-child(6){transform:translateY(-360px) scale(1);transition-delay:.21s}.rtf.open .rtf--ab__c:nth-child(6).top{transform:translateY(360px) scale(1)}.rtf--mb__c{padding:25px;margin:-25px}.rtf--mb__c :last-child{margin-bottom:0}.rtf--mb__c:hover>span,.rtf--mb__c>span.always-show{transition:opacity .2s ease-in-out;opacity:.9}.rtf--mb__c>span{opacity:0;transition:opacity .2s ease-in-out;position:absolute;top:50%;transform:translateY(-50%);margin-right:6px;margin-left:4px;background:rgba(0,0,0,.75);padding:2px 4px;border-radius:2px;color:#fff;font-size:13px;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)}.rtf--mb__c>span.right{right:100%}.rtf--mb{height:56px;width:56px;z-index:9999;background-color:#666;display:inline-flex;justify-content:center;align-items:center;position:relative;border:none;border-radius:50%;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);cursor:pointer;outline:none;padding:0;-webkit-user-drag:none;font-weight:700;color:#f1f1f1;font-size:18px}.rtf--ab__c,.rtf--mb>*{transition:transform .2s ease-in-out}.rtf--ab__c{display:block;position:absolute;top:0;right:1px;padding:10px 0;margin:-10px 0}.rtf--ab__c>span{opacity:0;transition:opacity .2s ease-in-out;position:absolute;top:50%;transform:translateY(-50%);margin-right:6px;background:rgba(0,0,0,.75);padding:2px 4px;border-radius:2px;color:#fff;font-size:13px;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28)}.rtf--ab__c>span.right{right:100%}.rtf--ab__c:first-child{transform:translateY(-60px) scale(0);transition-delay:.21s}.rtf--ab__c:first-child.top{transform:translateY(60px) scale(0)}.rtf--ab__c:nth-child(2){transform:translateY(-120px) scale(0);transition-delay:.18s}.rtf--ab__c:nth-child(2).top{transform:translateY(120px) scale(0)}.rtf--ab__c:nth-child(3){transform:translateY(-180px) scale(0);transition-delay:.15s}.rtf--ab__c:nth-child(3).top{transform:translateY(180px) scale(0)}.rtf--ab__c:nth-child(4){transform:translateY(-240px) scale(0);transition-delay:.12s}.rtf--ab__c:nth-child(4).top{transform:translateY(240px) scale(0)}.rtf--ab__c:nth-child(5){transform:translateY(-300px) scale(0);transition-delay:.09s}.rtf--ab__c:nth-child(5).top{transform:translateY(300px) scale(0)}.rtf--ab__c:nth-child(6){transform:translateY(-360px) scale(0);transition-delay:.03s}.rtf--ab__c:nth-child(6).top{transform:translateY(360px) scale(0)}.rtf--ab{height:48px;width:48px;background-color:#aaa;display:inline-flex;justify-content:center;align-items:center;position:relative;border:none;border-radius:50%;box-shadow:0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);cursor:pointer;outline:none;padding:0;-webkit-user-drag:none;font-weight:700;color:#f1f1f1;margin-right:4px;font-size:16px;z-index:10000}</style><link rel="stylesheet" type="text/css" href="./React.js Online Editor_files/stand-alone-compiler.2fc9bc9b.chunk.css"><link rel="stylesheet" type="text/css" href="./React.js Online Editor_files/mktg-l2.07ff7e28.chunk.css"><style type="text/css">/* === Main Container === */
+.__dbk__container {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  overflow: hidden;
+}
+
+.__dbk__container.Horizontal {
+  flex-direction: row;
+}
+
+.__dbk__container.Vertical {
+  flex-direction: column;
+}
+/* ====== */
+
+/* === Wrapper for each child element === */
+.__dbk__child-wrapper {
+  height: 100%;
+  width: 100%;
+}
+/* ====== */
+
+/* === Gutter === */
+.__dbk__gutter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .__dbk__gutter > div {
+  background: red;
+} */
+.__dbk__gutter.Horizontal {
+  height: 100%;
+  padding: 0 2px;
+  flex-direction: column;
+}
+.__dbk__gutter.Horizontal:hover {
+  cursor: col-resize;
+}
+
+.__dbk__gutter.Vertical {
+  width: 100%;
+  padding: 2px 0;
+  flex-direction: row;
+}
+.__dbk__gutter.Vertical:hover {
+  cursor: row-resize;
+}
+
+.__dbk__gutter.Light {
+  background: #EDF0EF;
+}
+.__dbk__gutter.Light:hover > .__dbk__dragger {
+  background: #76747B;
+}
+
+.__dbk__gutter.Dark {
+  background: #020203;
+}
+.__dbk__gutter.Dark:hover > .__dbk__dragger {
+  background: #9995A3;
+}
+/* ====== */
+
+/* === Gutter's Dragger === */
+.__dbk__dragger {
+  border-radius: 2px;
+}
+
+.__dbk__dragger.Horizontal {
+  width: 4px;
+  height: 24px;  
+}
+
+.__dbk__dragger.Vertical {
+  width: 24px;
+  height: 4px;  
+}
+
+.__dbk__dragger.Light {
+  background: #A6ACB5;
+}
+
+.__dbk__dragger.Dark {
+  background: #434252;
+}
+/* ====== */</style><style>
+.SignerDigitalExtPopupModal {
+	font-family: Calibri, sans-serif;
+	display: none;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	left: 0;
+	top: 0;
+	position: fixed;
+	z-index: 9999;
+}
+
+.SignerDigitalExtClose {
+    position: absolute;
+    top: 30px;
+    right: 525px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.SignerDigitalExtLicSitesClose {
+	background: none;
+	border: none;
+	color: black;
+	font-size: 25px;
+	cursor: pointer;
+	line-height:1;
+	transition: color 0.3s ease-in-out;
+}
+
+.SignerDigitalExtSelCertContainer {
+    font-family: Calibri, sans-serif;
+    background-color: #e6faf6;
+    top: 50px;
+	position: relative;
+	padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 420px;
+    height: 420px;
+}
+
+.SignerDigitalExtSCPinContainer {
+    font-family: Calibri, sans-serif;
+    background-color: #e6faf6;
+    top: 50px;
+	position: relative;
+	padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    width: 360px;
+    height: 180px;
+}
+
+#SDCertListContainer {
+    margin-top: 10px;
+    max-height: 300px;
+    background-color: white;
+    overflow-y: auto;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+
+.SignerDigitalExtImg {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+}
+
+.SignerDigitalExtSpan {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.SignerDigitalExtCertItem {
+    padding: 5px;
+    border-bottom: 1px solid;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.SignerDigitalExtCertItem:hover {
+	background-color: #ccc;
+}
+
+.SignerDigitalExtCertItem.selected {
+	background-color: #ccc;
+	border-color: #007bff;
+}
+
+.expired {
+    color: red;
+    font-weight: bold;
+}
+
+.SignerDigitalExtButton {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.SignerDigitalExtLicSitesImg {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.SignerDigitalExtLicSitesSpan {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.SignerDigitalExtLicSitesContainer {
+	font-family: Calibri, sans-serif;
+	background-color: #e6faf6;
+	border: 1px solid black;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin: 30px auto;
+	width: 550px;
+	height: 500px;
+}
+
+.SignerDigitalExtLicSitesHeader {
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+
+.SignerDigitalExtLicSitesParagraph {
+	padding-left: 15px;
+	padding-top: 20px;
+	font-size: 14px;
+}
+
+.SignerDigitalExtLicSitesDiv {
+	display: flex;
+	justify-content:center;
+	padding: 10px;
+}
+
+.SignerDigitalExtLicSitesBtn {
+	width: 100px;
+	padding: 3px;
+	font-weight: 600;
+	font-size: 12px;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+ .SignerDigitalExtLicSitesTable {
+     width: 100%;
+     background-color: white;
+     border-collapse: collapse;
+ }
+
+	
+ .SignerDigitalExtLicSitesTd {
+	 padding: 5px !important;
+     width: 140px;
+     border: 1px solid #ddd;
+     text-align: left;
+	 vertical-align:middle;
+ }
+ .SignerDigitalExtLicSitesTdd {
+     border: 1px solid #ddd;
+     text-align: center;
+ }
+
+ .SignerDigitalExtLicSitesTh {
+     border: 1px solid #ddd;
+     background-color: #f4f4f4;
+	 line-height:1;
+     width: 100px;
+     text-align: left;
+	 margin-top:5px;
+     padding: 5px;
+ }
+.SignerDigitalExtLicSitesScroll {
+     max-height: 200px;
+     overflow-y: auto;
+ }
+ .SignerDigitalExtLicSitesDltbtn {
+     color: white;
+     background-color: #e42424;
+     border: 1px solid black;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+ .SignerDigitalExtLicSitesDltbtn:hover {
+         background-color: darkred;
+ }
+</style>
+<link rel="stylesheet" type="text/css" href="./React.js Online Editor_files/sandbox.c5409346.chunk.css"><style></style><link rel="stylesheet" type="text/css" href="./React.js Online Editor_files/nl-html-editor.3d19d466.chunk.css"><script type="text/javascript" async="" src="./React.js Online Editor_files/f.txt" nonce=""></script><script src="./React.js Online Editor_files/js(1)" async=""></script><link rel="stylesheet" type="text/css" href="./React.js Online Editor_files/nl-js-editor.3d19d466.chunk.css"></head><body class=""><div id="root" style="--default-background-color:#0c0c0c;--primary-background-color:#0c0c0c;--secondary-background-color:#141414;--tertiary-background-color:#1f1f1f;--quaternary-background-color:rgba(255, 255, 255, 0.3);--quaternary-light-background-color:rgba(255, 255, 255, 0.05);--text-color:rgba(255, 255, 255, 1);--primary-text-color:rgba(255, 255, 255, 1);--text-disabled-color:rgba(255, 255, 255, 0.4);--secondary-text-color:rgba(255, 255, 255, 0.75);--tertiary-text-color:rgba(255, 255, 255, 0.6);--primary-cta-background-color:#2af773;--secondary-cta-background-color:#ffffff;--secondary-cta-text-color:rgba(0, 0, 0, 0.96);--input-background-color:#2e2e2e;--dialog-overlay-background-color:rgba(40, 40, 40, 0.9);--card-background-color:#1f1f1f;--border-color:rgba(255, 255, 255, 0.1);--seperator-color:rgba(255, 255, 255, 0.1);--default-button-background-color:rgba(255, 255, 255, 1);--divider-color:rgba(255, 255, 255, 0.1);--grey_light_4:#3d3d3d;--green-text:#2af773;--green-tint:#0d3838;--green:#30d158;--yellow:#ffd60a;--red:#ff453a;--orange:#ff9f0a;--sky:#61aff7;--blue:#0a84ff;--pink:#ff375f;--lilac:#bf5af2;--rose:#f3b4c0;--teal:#40c8e0;--almond:#544845;--cream:#73635F;--white:#ffffff;--black:#000000;--primary_green:#21c45b;--background_grey:#1f1f1f;--tag_green:#42764F;--tag_yellow:#E1BC00;--tag_red:#8F2620;--tag_orange:#CA8519;--tag_blue:#094887;--tag_pink:#861F70;--tag_purple:#601F80;--tag_light_blue:#008299;--dark-invert-100:100%;--dark-invert-0:0%;--primary-black:#ffffff;--primary-white: #000000;--tab_blue_background:#504171;--marketing-green:#B5E09B;"><div class="mcp-conatiner" style="background-color: var(--default-background-color); --viewport-height: 730px; --top-nav-height: 100px; --tab-nav-height: 0px; --bottom-nav-height: 0px; --page-announcement-bar-height: 0px; --right-pane-width: 0px;"><div id="mcp-main-body" class="mcp-main-body" style="display: flex; flex-direction: column;"><div class="header-container header-padding-no-gutter"><a class="header-image-container" href="https://nextleap.app/"><img class="header-image-icon" src="./React.js Online Editor_files/logo-white-3366eff62fee.svg" alt="NextLeap" loading="lazy" height="32" width="120"></a><div class="desktop-header-container-right"><div class="desktop-header-middle-container"><div class="program-dropdown desktop-drop-down"><div class="desktop-header-text">Courses</div></div><div class="desktop-drop-down blog-dropdown"><a class="desktop-header-text desktop-header-text-no-dropdown" href="https://nextleap.app/reviews">NextLeap Reviews</a></div><div class="desktop-drop-down blog-dropdown"><a class="desktop-header-text desktop-header-text-no-dropdown" href="https://nextleap.app/for-companies">Hire From Us</a></div><div class="desktop-drop-down blog-dropdown"><a class="desktop-header-text desktop-header-text-no-dropdown" href="https://nextleap.app/blog/" target="_blank" rel="noreferrer">Blog</a></div><div class="desktop-drop-down blog-dropdown d-none"><a class="desktop-header-text desktop-header-text-no-dropdown" href="https://nextleap.app/blog/" target="_blank" rel="noreferrer">Blog</a></div></div><div class="login-drop-down desktop-drop-down"><div class="desktop-header-text desktop-header-text-no-dropdown">Login</div></div></div></div><div class=" padding-bottom-80 padding-top-80  padding-right-64-left-64" style="padding: 0px; flex: 0 1 0%; display: flex; flex-direction: column;"><div style="display: flex; flex-direction: row; --gutter-color: #0c0c0c; --input-background-color: #1f1f1f; --tab-selected-background-color: #1f1f1f; --tab-unselected-background-color: #0c0c0c; --output-header-background-color: #0c0c0c; --output-background-color: #141516; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); min-height: calc(var(--viewport-height, 100vh)  - var(--top-nav-height, 0)); height: calc(var(--viewport-height, 100vh)  - var(--top-nav-height, 0));"><div class="standalone-compiler-side-tabs-nav-parent"><div class="standalone-compiler-side-tabs-nav-single-tab standalone-compiler-side-tabs-nav-single-tab-selected" style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: black;"><img src="./React.js Online Editor_files/compiler_ic_reactjs.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-selected" alt="React.js" loading="lazy">React.js</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_c_lang_ic.png" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="C" loading="lazy">C</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_csharp_ic.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="C#" loading="lazy">C#</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_c_ic.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="C++" loading="lazy">C++</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_ic_golang.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Go" loading="lazy">Go</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_ic_html5_1.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="HTML" loading="lazy">HTML</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_java_ic.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Java" loading="lazy">Java</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_javascript_ic.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="JS" loading="lazy">JS</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/jupyter_notebook_ic_compiler.png" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Jupyter" loading="lazy">Jupyter</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_kotlin_logo.png" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Kotlin" loading="lazy">Kotlin</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_perl_icon.png" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Perl" loading="lazy">Perl</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_php_logo.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="PHP" loading="lazy">PHP</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_prolog_icon.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Prolog" loading="lazy">Prolog</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_python_ic.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Python" loading="lazy">Python</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_r_logo.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="R" loading="lazy">R</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_scala_icon.png" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Scala" loading="lazy">Scala</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_ic_sql.svg" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="SQL" loading="lazy">SQL</div><div class="standalone-compiler-side-tabs-nav-single-tab " style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 13px; line-height: 150%; color: var(--text-color);"><img src="./React.js Online Editor_files/compiler_swift_icon.png" width="24" height="24" class="standalone-compiler-side-tabs-nav-single-tab-ic-dark" alt="Swift" loading="lazy">Swift</div></div><div style="height: 100%; flex: 1 1 0%;"><div style="position: relative;"><div class="dark sp-c-fVPbOs sp-c-fVPbOs-LrWkf-variant-dark sp-wrapper" style="--sp-layout-headerHeight: 56px; --sp-colors-surface1: #0c0c0c; --sp-colors-surface2: black; --sp-border-radius: 0px;"><div class="sp-c-ikJbEZ code-sandbox-layout sp-layout" style="height: calc(var(--view-port-height, 100vh) - var(--top-nav-height));"><div class="sp-c-euXojQ sp-stack" style="margin: 0px; height: calc(var(--view-port-height, 100vh) - var(--top-nav-height)); background-color: black;"><div><img src="./React.js Online Editor_files/chevron_right_5685e5c1-e4f4-416f-bfa9-eeb3618f8dc4.svg" width="24" height="24" class="code-sandbox-file-explorer-icon"><div class="sp-c-dyHYiL sp-tabs" translate="no" style="padding-left: 24px; font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: 500; font-size: 15px; line-height: 134%; cursor: pointer; letter-spacing: 0.25px; background-color: rgb(12, 12, 12); border-bottom: 1px solid var(--border-color);"><div aria-label="Select active file" class="sp-c-gGbYbQ sp-tabs-scrollable-container" role="tablist"><div aria-controls="/App.js-undefined-tab-panel" aria-selected="true" class="sp-c-hluGOI sp-tab-container" role="tab"><button class="sp-c-bxeRRt sp-c-pacmO sp-tab-button" data-active="true" id="/App.js-undefined-tab" tabindex="0" title="/App.js" type="button">App.js</button><span class="sp-c-jKPvnt sp-close-button" tabindex="0" style="visibility: visible;"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><title>Close file</title><path d="M12 4L4 12" stroke-linecap="round"></path><path d="M4 4L12 12" stroke-linecap="round"></path></svg></span></div><div aria-controls="/Transtext/app.jsx-undefined-tab-panel" aria-selected="false" class="sp-c-hluGOI sp-tab-container" role="tab"><button class="sp-c-bxeRRt sp-c-pacmO sp-tab-button" data-active="false" id="/Transtext/app.jsx-undefined-tab" tabindex="-1" title="/Transtext/app.jsx" type="button">app.jsx</button><span class="sp-c-jKPvnt sp-close-button" tabindex="-1" style="visibility: hidden;"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><title>Close file</title><path d="M12 4L4 12" stroke-linecap="round"></path><path d="M4 4L12 12" stroke-linecap="round"></path></svg></span></div></div></div></div><div style="--code-editor-height: 100%; height: 100%; min-height: 100%; max-width: var(--viewport-width, 100vw); font-family: &quot;Lexend Deca&quot;; font-weight: normal; font-size: 17px; line-height: 27.2; background-color: var(--input-background-color); overflow: scroll; --indentation-guider-color: rgba(227, 228, 226, 0.16);"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼ5"><div class="cm-announced" aria-live="polite"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 3571.2px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">999</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 27.2px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 27.2px;">2</div><div class="cm-gutterElement" style="height: 27.2px;">3</div><div class="cm-gutterElement" style="height: 27.2px;">4</div><div class="cm-gutterElement" style="height: 27.2px;">5</div><div class="cm-gutterElement" style="height: 27.2px;">6</div><div class="cm-gutterElement" style="height: 27.2px;">7</div><div class="cm-gutterElement" style="height: 27.2px;">8</div><div class="cm-gutterElement" style="height: 27.2px;">9</div><div class="cm-gutterElement" style="height: 27.2px;">10</div><div class="cm-gutterElement" style="height: 27.2px;">11</div><div class="cm-gutterElement" style="height: 27.2px;">12</div><div class="cm-gutterElement" style="height: 27.2px;">13</div><div class="cm-gutterElement" style="height: 27.2px;">14</div><div class="cm-gutterElement" style="height: 27.2px;">15</div><div class="cm-gutterElement" style="height: 27.2px;">16</div><div class="cm-gutterElement" style="height: 27.2px;">17</div><div class="cm-gutterElement" style="height: 27.2px;">18</div><div class="cm-gutterElement" style="height: 27.2px;">19</div><div class="cm-gutterElement" style="height: 27.2px;">20</div><div class="cm-gutterElement" style="height: 27.2px;">21</div><div class="cm-gutterElement" style="height: 27.2px;">22</div><div class="cm-gutterElement" style="height: 27.2px;">23</div><div class="cm-gutterElement" style="height: 27.2px;">24</div><div class="cm-gutterElement" style="height: 27.2px;">25</div><div class="cm-gutterElement" style="height: 27.2px;">26</div><div class="cm-gutterElement" style="height: 27.2px;">27</div><div class="cm-gutterElement" style="height: 27.2px;">28</div><div class="cm-gutterElement" style="height: 27.2px;">29</div><div class="cm-gutterElement" style="height: 27.2px;">30</div><div class="cm-gutterElement" style="height: 27.2px;">31</div><div class="cm-gutterElement" style="height: 27.2px;">32</div><div class="cm-gutterElement" style="height: 27.2px;">33</div><div class="cm-gutterElement" style="height: 27.2px;">34</div><div class="cm-gutterElement" style="height: 27.2px;">35</div><div class="cm-gutterElement" style="height: 27.2px;">36</div></div><div class="cm-gutter cm-foldGutter"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;"><span title="Unfold line">›</span></div><div class="cm-gutterElement cm-activeLineGutter" style="height: 27.2px; margin-top: 4px;"></div><div class="cm-gutterElement" style="height: 27.2px; margin-top: 27.2px;"><span title="Fold line">⌄</span></div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" writingsuggestions="false" translate="no" contenteditable="true" style="tab-size: 4;" class="cm-content" role="textbox" aria-multiline="true" data-language="javascript" aria-autocomplete="list"><div class="cm-activeLine cm-line"><span class="ͼ7">import</span> <span class="ͼ8">React</span> <span class="ͼ7">from</span> <span class="ͼg">"react"</span><span class="ͼe">;</span></div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼ7">export</span> <span class="ͼ7">default</span> <span class="ͼ6">function</span> <span class="ͼc">App</span><span class="ͼk">(</span><span class="ͼk">)</span> <span class="ͼk">{</span></div><div class="cm-line">  <span class="ͼ7">return</span> <span class="ͼk">(</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">div</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"font-sans bg-white text-gray-800"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>  <span class="ͼk">{</span><span class="ͼo">/* Navbar */</span>}</div><div class="cm-line">   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;</span><span class="ͼ6">header</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"bg-blue-700 text-white shadow-md"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">div</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;</span><span class="ͼ6">h1</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"text-2xl font-bold"</span><span class="ͼi">&gt;</span>TransText<span class="ͼi">&lt;/</span><span class="ͼ6">h1</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;</span><span class="ͼ6">nav</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"space-x-4"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span> <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#about"</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"hover:text-yellow-300"</span><span class="ͼi">&gt;</span>About<span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span> <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#vision"</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"hover:text-yellow-300"</span><span class="ͼi">&gt;</span>Vision<span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span> <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#features"</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"hover:text-yellow-300"</span><span class="ͼi">&gt;</span>Features<span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span> <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#services"</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"hover:text-yellow-300"</span><span class="ͼi">&gt;</span>Services<span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span> <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#showcase"</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"hover:text-yellow-300"</span><span class="ͼi">&gt;</span>Showcase<span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span> <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#contact"</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"hover:text-yellow-300"</span><span class="ͼi">&gt;</span>Contact<span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;/</span><span class="ͼ6">nav</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;/</span><span class="ͼ6">div</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;/</span><span class="ͼ6">header</span><span class="ͼi">&gt;</span></div><div class="cm-line"><img class="cm-widgetBuffer" aria-hidden="true"><span class="cm-indentation-widget" contenteditable="false"><span class="cm-indentation-guide">    </span></span><br></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>  <span class="ͼk">{</span><span class="ͼo">/* Hero Section */</span>}</div><div class="cm-line">   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;</span><span class="ͼ6">section</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"bg-blue-50 py-16 text-center"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">h2</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"text-4xl font-bold text-blue-800 mb-4"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  Break the Language Barrier in Education</div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;/</span><span class="ͼ6">h2</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">p</span> <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"text-lg max-w-2xl mx-auto mb-6"</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  TransText helps NIT Trichy students understand technical content in their native</div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  language — powered by AI and tailored for academic context.</div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;/</span><span class="ͼ6">p</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;</span><span class="ͼ6">a</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  <span class="ͼ8">href</span><span class="ͼe">=</span><span class="ͼg">"#contact"</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  <span class="ͼ8">className</span><span class="ͼe">=</span><span class="ͼg">"bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition"</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span>  Get Started</div><div class="cm-line">   <span class="cm-indentation-guide"> </span>   <span class="cm-indentation-guide"> </span><span class="ͼi">&lt;/</span><span class="ͼ6">a</span><span class="ͼi">&gt;</span></div><div class="cm-line">   <span class="cm-indentation-guide"> </span>  <span class="ͼi">&lt;/</span><span class="ͼ6">section</span><span class="ͼi">&gt;</span></div><div class="cm-gap" style="height: 2584px;"></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 58.1125px; top: 7.2px; height: 20.8px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div><div style="display: flex; flex-direction: column; flex: 1 1 0%; max-width: 480px;"><div style="flex: 1 1 0%; display: flex; flex-direction: column;"><div class="code-sandbox-preview-embed-header" style="background-color: rgb(12, 12, 12);"><img class="code-sandbox-icon" src="./React.js Online Editor_files/refresh.svg" alt="Reset Code" loading="lazy" style="cursor: pointer;"><img class="code-sandbox-icon" src="./React.js Online Editor_files/theme-16e5b447-ad21-4989-8f6d-51046bfc1c15.svg" height="18" width="18" alt="Change Theme" loading="lazy" style="cursor: pointer;"><img src="./React.js Online Editor_files/zoom_out_map_FILL0_wght400_GRAD0_opsz48.svg" class="standalone-code-compiler-editor-button-icon" height="24" width="24" alt="Full Screen" style="cursor: pointer;"><div class="code-sandbox-share-button" style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: 500; font-size: 15px; line-height: 134%; cursor: pointer; letter-spacing: 0.25px;"><div class="code-sandbox-share-button-icon-wrapper"><img src="./React.js Online Editor_files/share_icon_d8152f01-5813-44f9-be87-f563bf780a15.svg" class="code-sandbox-share-button-icon" width="16" height="16" loading="lazy" style="object-fit: cover; margin-right: 12px;"></div>Share</div></div><div class="sp-c-euXojQ sp-preview sp-stack" style="flex: 1 1 0%; height: unset;"><div class="sp-c-juMdfR sp-preview-container"><iframe class="sp-c-fgviib sp-preview-iframe" title="Sandpack Preview" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts allow-downloads allow-pointer-lock" allow="accelerometer; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; clipboard-read; clipboard-write; xr-spatial-tracking;" src="./React.js Online Editor_files/saved_resource.html" style="height: 1212px;"></iframe><div class="sp-c-kwibBT sp-preview-actions"><button class="sp-icon-standalone sp-c-bxeRRt sp-c-gMfcns sp-c-dEbKhQ sp-button" type="button"><svg fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><title>Refresh preview</title><path clip-rule="evenodd" d="M3.83325 7.99992C3.83325 5.69867 5.69853 3.83325 7.99934 3.83325C9.81246 3.83325 11.3563 4.99195 11.9285 6.61097C11.9396 6.6425 11.9536 6.67221 11.97 6.69992H8.80005C8.52391 6.69992 8.30005 6.92378 8.30005 7.19992C8.30005 7.47606 8.52391 7.69992 8.80005 7.69992H12.5667C12.8981 7.69992 13.1667 7.43129 13.1667 7.09992V3.33325C13.1667 3.05711 12.9429 2.83325 12.6667 2.83325C12.3906 2.83325 12.1667 3.05711 12.1667 3.33325V4.94608C11.2268 3.66522 9.7106 2.83325 7.99934 2.83325C5.14613 2.83325 2.83325 5.14651 2.83325 7.99992C2.83325 10.8533 5.14613 13.1666 7.99934 13.1666C9.91218 13.1666 11.5815 12.1266 12.474 10.5836C12.6123 10.3446 12.5306 10.0387 12.2915 9.90044C12.0525 9.76218 11.7466 9.84387 11.6084 10.0829C10.8873 11.3296 9.54072 12.1666 7.99934 12.1666C5.69853 12.1666 3.83325 10.3012 3.83325 7.99992Z" fill-rule="evenodd"></path></svg></button></div></div></div></div><div style="font-family: &quot;Lexend Deca&quot;; font-style: normal; font-weight: normal; font-size: 17px; line-height: 160%; letter-spacing: 0.25px; background: var(--tertiary-background-color); border-bottom: 1px solid var(--border-color); width: 100%; height: 56px; display: flex; align-items: center; padding-left: 16px; gap: 10px; cursor: pointer;">Console<img src="./React.js Online Editor_files/arrow_drop_up_f846f4a2-1e91-49fe-b71a-ea3c7e055569.svg" width="10" height="10" style="filter: invert(100%);"></div></div></div></div></div></div></div></div></div></div></div><footer id="page-footer" class="page-shell-footer-container padding-right-64-left-64" style="--footer-bg-color:#141414;--footer-text-color:#FFFFFF;--footer-logo-invert:100;"><div class="shell-page-footer-html-outer-container" style="display:none"><div class="shell-page-footer-html-container-card"><div id="shell-page-footer-html-container" class="shell-page-footer-html-container shell-page-footer-html-container-truncate-text" style="word-break:break-word;--shell-page-footer-html-a-tag-color:#cee5d9"><div id="page-footer-dynamic-html-content"></div></div><div id="shell-page-footer-html-container-card-mask" class="shell-page-footer-html-container-card-mask"><div style="display:flex;gap:8px;align-items:center;justify-content:center;width:100%;padding:16px"><div class="shell-page-footer-html-container-card-read-more">Read More</div><img src="./React.js Online Editor_files/chevron-down-dark-fb86a81f-c322-4b2c-a5db-db9d9101378d.svg" height="24" width="24" alt="down-arrow" loading="lazy" style="filter:invert(1)"></div></div></div></div><div class="shell-footer-logo-container"><img class="shell-footer-logo" src="./React.js Online Editor_files/logo-black-908fbbee67f9.svg" alt="NextLeap" loading="lazy" height="32" width="120"></div><div class="shell-footer-section-outer-container"><div class="shell-footer-section-inner-container shell-footer-section-inner-container-courses"><div class="shell-footer-main-heading">Courses</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/course/product-management-course">Product Manager Fellowship</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/course/ui-ux-design-course">Product Designer Fellowship</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/course/data-analyst-course">Data Analyst Fellowship</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/course/business-analyst-course">Business Analyst Fellowship</a></div></div><div class="shell-footer-section-inner-container"><div class="shell-footer-main-heading">Company</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/about-us">Team</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/manifesto">Manifesto</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/for-companies">Hire From Us</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/policy/privacy-policy">Privacy Policy</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/policy/tos">Terms of Use</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/policy/refund-policy">Refund Policy</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/contact-us">Contact Us</a></div></div><div class="shell-footer-section-inner-container"><div class="shell-footer-main-heading">Follow Us</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://twitter.com/yournextleap" target="_blank" rel="noreferrer"><img class="shell-footer-social-logo-main" src="./React.js Online Editor_files/twitter-ced0b9bb2f1c.svg" alt="Twitter" loading="lazy" height="14" width="14"> Twitter </a><a class="shell-footer-sub-heading" href="https://www.linkedin.com/company/your-nextleap" target="_blank" rel="noreferrer"><img class="shell-footer-social-logo-main" src="./React.js Online Editor_files/li-0cf3129598dc.svg" alt="LinkedIn" loading="lazy" height="14" width="14"> LinkedIn </a><a class="shell-footer-sub-heading" href="https://www.youtube.com/c/NextLeap" target="_blank" rel="noreferrer"><img class="shell-footer-social-logo-main" src="./React.js Online Editor_files/youtube-dcc18abface6.svg" alt="YouTube" loading="lazy" height="14" width="14"> YouTube </a><a class="shell-footer-sub-heading" href="https://www.instagram.com/yournextleap/" target="_blank" rel="noreferrer"><img class="shell-footer-social-logo-main" src="./React.js Online Editor_files/insta-52192f6d7526.svg" alt="Instagram" loading="lazy" height="14" width="14"> Instagram</a></div></div><div class="shell-footer-section-inner-container"><div class="shell-footer-main-heading">Reviews</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/reviews">NextLeap Reviews</a></div></div></div><div class="shell-footer-section-outer-container shell-footer-section-outer-container-margin"><div class="shell-footer-section-inner-container shell-footer-section-inner-container-courses"><div class="shell-footer-main-heading">Product Management Interview Resources</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/product-management/questions">Product Management Interview Questions</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/portfolios/product-management/examples">Product Management Portfolio Examples</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/product-management/books">Product Management Books, Newsletters &amp; Podcasts</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/portfolios/product-management/teardowns">Product Management Product Teardowns</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/jobs/product-management">Product Management Job Board</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/resume/product-management/dashboard">Product Management Resume Builder</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/product-management">Product Management - All Resources</a></div></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container-courses"><div class="shell-footer-main-heading">UI UX Design Interview Resources</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/portfolios/ui-ux-design/examples">UX Design Portfolio Examples</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/ui-ux-design/books">UX Design Books, Newsletters &amp; Podcasts</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/jobs/ui-ux-design">UX Design Job Board</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/resume/ui-ux-design/dashboard">UX Design Resume Builder</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/ui-ux-design">UX Design - All Resources</a></div></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container-courses"><div class="shell-footer-main-heading">Other Interview Resources</div><div class="shell-footer-sub-heading-container"><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/sql/questions">SQL Interview Questions</a></div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/excel/questions">Excel Interview Questions</a></div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/interview-preparation/excel/practice-online">Excel Practice Resources</a></div></div></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container"><div class="shell-footer-main-heading">Project Showcases</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/product-management-course/showcase/fshuxjajd7lxrqoe0m">Product Management</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/ui-ux-design-course/showcase/fsfy9wwx90sp8y5odl">UI UX Design</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/data-analyst-course/showcase/fsda0xz04ue0d6ks7x">Data Analyst</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/showcase">All Showcases</a></div></div></div><div class="shell-footer-section-outer-container shell-footer-section-outer-container-margin"><div class="shell-footer-section-inner-container shell-footer-section-inner-container"><div class="shell-footer-main-heading">Job Board</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/jobs/product-management">Product Management</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/jobs/ui-ux-design">UI UX Design</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/jobs/data-analyst">Data Analyst</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/jobs/engineering">Engineering</a></div></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container"><div class="shell-footer-main-heading">Online Compilers</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/python-programming">Python Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/java-programming">Java Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/c-programming">C Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/cpp-programming">C++ Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/csharp-programming">C# Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/javascript-programming">Javascript Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/sql-programming">SQL Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/reactjs-programming">React.js Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/html-programming">HTML Compiler</a></div></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container"><div class="shell-footer-main-heading">More Online Compilers</div><div class="shell-footer-sub-heading-container"><a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/jupyter-notebook">Jupyter Notebook</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/go-programming">Go Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/r-programming">R Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/php-programming">PHP Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/kotlin-programming">Kotlin Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/swift-programming">Swift Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/scala-programming">Scala Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/prolog-programming">Prolog Compiler</a> <a class="shell-footer-sub-heading" href="https://nextleap.app/online-compiler/perl-programming">Perl Compiler</a></div></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container-courses"></div><div class="shell-footer-section-inner-container shell-footer-section-inner-container-courses"></div></div><div class="shell-second-footer-section"><div class="shell-footer-company-desc"><p>NextLeap is a fast-growing startup in the workforce skilling segment, revolutionizing career transitions for early career professionals in India. Founded with the mission to bridge the gap between traditional education and real-world skills, NextLeap offers bootcamp-style Fellowship programs designed to help individuals break into new age technology roles in <b>Product Management, UX Design/Product Design, Data Analytics, Business Analytics and Software Engineering.</b></p><p>Since its inception in 2021, NextLeap has empowered over <b>15,000+ learners</b> to successfully transition into technology careers, thanks to a curriculum rooted in hands-on learning, personalised mentorship from industry leaders, extensive interview practice and a strong focus on job placement.</p><p>What sets NextLeap apart is its focus on outcomes led learning delivered at an affordable cost via an AI enabled full stack technology platform. NextLeap has been voted as one of the Top 100 Edtech startups in South Asia by HolonIQ and has since established itself as a trusted learning platform driven for career advancement in India’s tech landscape.</p></div><div class="shell-footer-copyright" style="text-decoration:none;margin-top:8px">© 2023-2024, Elemento Learning Technologies Pvt. Ltd.</div></div></footer><script nonce="">document.addEventListener("DOMContentLoaded",(function(){const e=document.getElementById("shell-page-footer-html-container-card-mask");e?.addEventListener("click",(()=>{const t=document.getElementById("shell-page-footer-html-container");t?.classList.remove("shell-page-footer-html-container-truncate-text"),e.style.display="none"}))}))</script><noscript><link href="https://assets.nextleap.app/static/css/main.d3f01a41.css" rel="stylesheet"></noscript><noscript><iframe src="./React.js Online Editor_files/ns.html" width="0" height="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1191883555172251");fbq("set","agent","tmgoogletagmanager","1191883555172251");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1191883555172251&amp;ev=PageView&amp;noscript=1"></noscript><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./React.js Online Editor_files/saved_resource(1).html"></iframe>
+<noscript><img src="./React.js Online Editor_files/tr" width="1" height="1" style="display:none;"></noscript><noscript><iframe src="./React.js Online Editor_files/ns(1).html" width="0" height="0" style="display:none;visibility:hidden"></iframe></noscript><noscript><img src="./React.js Online Editor_files/tr" width="1" height="1" style="display:none;"></noscript></body><div id="SelCertPopupModal" class="SignerDigitalExtPopupModal" style="display:none;">
+    <div class="SignerDigitalExtSelCertContainer">
+        <button id="SelCertCloseBtn" class="SignerDigitalExtClose">x</button>
+		<div class="SignerDigitalExtImg">
+			<img id="SDIconSelCert" alt="Globe icon" height="32" width="32" src="chrome-extension://glghokcicpikglmflbbelbgeafpijkkf/icon32.png">&nbsp;&nbsp;&nbsp;
+			<span class="SignerDigitalExtSpan" style="text-align:center;">Select Certificate</span>
+		</div>		
+		<div style="height: 310px; width: 100%; border-bottom: 1px solid black;background-color:white;">
+			<div style="max-height: 310px; overflow-y: auto;">
+				<div id="SDCertListContainer"></div>
+			</div>
+		</div>
+		<div class="SignerDigitalExtButton">
+			<button id="SelCertOkBtn" style="width: 80px">OK</button>
+			<button id="SelCertCancelBtn" style="margin-left:15px; width: 80px;">Cancel</button>
+		</div>
+	</div>
+</div>
+<div id="SdExtSCPinPopupModal" class="SignerDigitalExtPopupModal" style="display:none;">
+    <div class="SignerDigitalExtSCPinContainer">
+		<form>
+			<div class="SignerDigitalExtImg" style="border-bottom: 1px solid black;">
+				<img id="SDIconSCPin" alt="Globe icon" height="32" width="32" src="chrome-extension://glghokcicpikglmflbbelbgeafpijkkf/icon32.png">&nbsp;&nbsp;&nbsp;
+				<span class="SignerDigitalExtSpan" style="text-align:center;">Smartcard / Token User Pin</span>
+			</div>
+			<div style="text-align:center; padding-top:25px; padding-bottom:25px; font-size:14px;">User PIN:&nbsp;&nbsp;&nbsp;<input id="SdExtUserPin" type="password">
+			</div>
+			<div class="SignerDigitalExtButton" style="border-top: 1px solid black;">
+				<button id="SdScPinOkBtn" style="width: 80px">OK</button>
+				<button id="SdSCPinCancelBtn" style="margin-left:15px; width: 80px;">Cancel</button>
+			</div>
+		</form>
+	</div>
+</div>
+<div id="LicSitesPopupModal" class="SignerDigitalExtPopupModal" style="display:none;">
+	<div class="SignerDigitalExtLicSitesContainer">
+		<div class="SignerDigitalExtLicSitesHeader">
+			<span style="margin:10px;">Signer.Digital</span>
+			<button id="LicSitesCloseBtn" class="SignerDigitalExtLicSitesClose">x</button>
+		</div>
+		<div class="SignerDigitalExtLicSitesImg">
+			<img id="SDIconLicSite" alt="Globe icon" height="32" width="32" src="chrome-extension://glghokcicpikglmflbbelbgeafpijkkf/icon32.png">&nbsp;&nbsp;
+			<span class="SignerDigitalExtLicSitesSpan">Signer.Digital - Confirm Key Listing / Usage</span>
+		</div>
+		<div style="display:none;"><img id="trash_icon_src" src="chrome-extension://glghokcicpikglmflbbelbgeafpijkkf/icon_trash.svg"></div>
+		<div class="SignerDigitalExtLicSitesParagraph">
+			<span id="currentDomainLink" style="font-size:18px;font-weight:600;">Current Domain</span><br>
+			is trying to detect smartcards connected, or read certificate or use key for signing/encryption. Please
+			select your option.
+		</div>
+		<div class="SignerDigitalExtLicSitesDiv">
+			<button id="denyBtn" class="SignerDigitalExtLicSitesBtn">Deny</button>
+			<button id="alwaysallowBtn" class="SignerDigitalExtLicSitesBtn" style="margin-left:30px;" title="Allow access to Check Vendor License for Site.">Always Allow</button>
+		</div>
+		<div style="padding: 10px; text-align: center; ">
+			<strong style="font-size:18px;">Licensed Sites</strong><br><br>
+			<div style="height: 200px; width: 100%; border: 1px solid black;">
+				<div class="SignerDigitalExtLicSitesScroll">
+					<table class="SignerDigitalExtLicSitesTable">
+						<thead>
+							<tr>
+								<th class="SignerDigitalExtLicSitesTh">Website</th>
+								<th class="SignerDigitalExtLicSitesTh">License Status</th>
+								<th class="SignerDigitalExtLicSitesTh">Features</th>
+								<th class="SignerDigitalExtLicSitesTh" style="width:50px;">Action</th>
+							</tr>
+						</thead>
+						<tbody id="licenseSitesTableBody">
+							<!-- Table rows will be dynamically added here -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<span id="SDLicSitesErrMsg" style="color:red"></span>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+</html>
